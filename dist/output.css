@@ -556,12 +556,20 @@ video {
   height: 100px;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
 
 .w-\[320px\] {
   width: 320px;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .grid-cols-3 {
