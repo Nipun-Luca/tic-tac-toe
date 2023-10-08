@@ -534,6 +534,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -545,4 +553,15 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.underline-offset-0 {
+  text-underline-offset: 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-slate-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  }
 }
