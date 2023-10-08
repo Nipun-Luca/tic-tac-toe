@@ -1,5 +1,3 @@
-// Your JavaScript code goes here
-
 const cells = document.querySelectorAll('.cell');
 let currentPlayer = 'X';
 let gameOver = false;
