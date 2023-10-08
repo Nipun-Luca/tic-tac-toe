@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
-  <!-- <link href="./styles.css" rel="stylesheet"> -->
   <title>Tic-Tac-Toe</title>
   <script src="script.js" defer></script>
 </head>
@@ -12,8 +11,11 @@
 <body style="height: 100vh; width: 100%;" class="bg-slate-700 text-white font-serif flex flex-col">
   <h1 class="text-center text-3xl font-bold p-3">Tic-Tac-Toe</h1>
 
-  <div class="flex-grow flex justify-center items-center">
-    <div class="mode"></div>
+  <div class="flex-grow flex flex-col justify-center items-center gap-8">
+    <div class="mode flex gap-14">
+      <button id="vsAIBtn" class="btn selected px-3 py-1 bg-blue-500 font-bold rounded-sm">VS CPU</button>
+      <button id="twoPlayerBtn" class="btn px-3 py-1 bg-blue-500 font-bold rounded-sm">2 Players</button>
+    </div>
     <div class="outcome"></div>
 
     <div class="grid grid-cols-3 gap-5 my-0 mx-auto w-[320px] text-black">
@@ -28,8 +30,8 @@
       <div class="cell w-[100px] h-[100px] text-2xl bg-slate-50 flex justify-center items-center cursor-pointer" data-cell></div>
     </div>
 
-    <button id="reset"></button>
-</div>
+    <button id="reset" class="px-3 py-2 bg-green-700 font-bold rounded-sm">Reset</button>
+  </div>
 
   <footer class="p-3 text-center">Copyright © 2023 Nipun-Luca</footer>
 </body>
